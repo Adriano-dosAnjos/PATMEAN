@@ -1,0 +1,24 @@
+.opc{
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 50px
+}
+
+mat-card{
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img{
+  margin-bottom: 30px;
+  object-fit: cover;
+  width: 100%;
+}

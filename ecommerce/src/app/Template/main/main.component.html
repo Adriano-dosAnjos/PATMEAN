@@ -1,0 +1,66 @@
+
+<mat-tab-group class="areabanner" mat-align-tabs="center" headerPosition="below">
+  <mat-tab>
+    <mat-card class="banner">
+      <img class="bannerImg" mat-card-image src="/assets/img/banner/bannerDounet.png">
+    </mat-card>
+    <ng-template mat-tab-label>
+      <mat-icon>more_horiz</mat-icon>
+    </ng-template>
+  </mat-tab>
+  <mat-tab>
+    <mat-card class="banner">
+      <img class="bannerImg" mat-card-image src="/assets/img/banner/bannerHotDog.png">
+    </mat-card>
+    <ng-template mat-tab-label>
+      <mat-icon>more_horiz</mat-icon>
+    </ng-template>
+  </mat-tab>
+  <mat-tab>
+    <mat-card class="banner">
+      <img class="bannerImg" mat-card-image src="/assets/img/banner/bannerHamburguer.png">
+    </mat-card>
+    <ng-template mat-tab-label>
+      <mat-icon>more_horiz</mat-icon>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+
+<section class="navPrincipal">
+  <button class="btnPrincipal" mat-stroked-button>
+    <mat-icon> local_pizza</mat-icon>
+    Salgados
+  </button>
+  <button class="btnPrincipal" mat-stroked-button>
+    <mat-icon>cake</mat-icon>
+    Sobremesas
+  </button>
+  <button class="btnPrincipal" mat-stroked-button>
+    <mat-icon> local_cafe</mat-icon>
+    Bebidas Quentes
+  </button>
+  <button class="btnPrincipal" mat-stroked-button>
+    <mat-icon> local_drink</mat-icon>
+    Bebidas Geladas
+  </button>
+
+</section>
+
+<section class="catItem">
+  <mat-card class="item" *ngFor="let produto of produtos">
+    <img mat-card-image src="/assets/img/produdos/image-not-found.jpg">
+    <mat-card-title>{{produto.item}}</mat-card-title>
+    <mat-card-subtitle>{{produto.categoria}}</mat-card-subtitle>
+    <mat-card-subtitle>R$: {{produto.valor}}</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{produto.desc}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="btncompra" mat-stroked-button color="primary">
+        Comprar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>
+

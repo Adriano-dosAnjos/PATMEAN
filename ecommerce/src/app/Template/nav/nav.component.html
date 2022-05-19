@@ -1,0 +1,19 @@
+<mat-toolbar class="navegador">
+  <button mat-button routerLink="">Home</button>
+
+  <span class="espaco"></span>
+
+  <mat-form-field class="cmpBuscar" appearance="standard">
+    <input type="text" matInput placeholder="buscar produtos">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+  <span class="espaco"></span>
+  <button mat-button>
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
+
+  <button mat-button [routerLink]="['cadastro']">
+    <mat-icon matSuffix> input</mat-icon>
+    Entrar
+  </button>
+</mat-toolbar>

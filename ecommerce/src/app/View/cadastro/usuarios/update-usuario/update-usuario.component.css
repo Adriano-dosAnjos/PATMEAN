@@ -1,0 +1,46 @@
+.upduser{
+  margin: 30px auto;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmpId{
+  width: 20%;
+  margin-right: 10%;
+}
+
+.cmpNome{
+  width: 70%;
+  margin: 10px 0px;
+}
+
+.cmpTel{
+  width: 40%;
+  margin-right: 10%;
+}
+
+.cmpEmail{
+  width: 50%;
+}
+
+.cmpCity{
+  width: 50%;
+  margin-right: 20%;
+}
+
+.cmpUf{
+  width: 30%;
+}
+
+
+
+.btsacoes{
+  margin: 20px 0px 50px 0px;
+}
+
+button{
+  margin: 10px;
+  width: 20%;
+}

@@ -1,0 +1,23 @@
+section{
+  margin: 20px 10%;
+}
+
+button{
+  margin: 10px;
+}
+
+table{
+  table-layout: fixed;
+  margin: auto;
+  width: 80%;
+}
+
+.mat-column-id{
+  text-align: center;
+  width: 5%;
+}
+
+.mat-column-acoes{
+  text-align: center;
+}
+

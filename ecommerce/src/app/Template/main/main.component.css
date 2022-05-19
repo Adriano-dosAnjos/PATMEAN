@@ -1,0 +1,58 @@
+.areabanner{
+  height: 500px;
+}
+
+.banner{
+  overflow: hidden;
+  display: block;
+  margin: 15px auto;
+  width: 65%;
+  height: 380px;
+}
+
+.bannerImg{
+  object-fit: cover;
+  object-position: bottom;
+  height: auto;
+}
+
+
+.navPrincipal{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btnPrincipal{
+  margin: 10px;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catItem{
+  padding: 20px;
+  margin: 5% 10%;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.item{
+  width: 20%;
+}
+
+img{
+  object-fit: cover;
+  height: 200px;
+}
+
+.btncompra{
+  width: 50%;
+}

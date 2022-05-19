@@ -1,0 +1,39 @@
+.dltproduct{
+  margin: 30px auto;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmpId{
+  width: 20%;
+  margin-right: 10%;
+}
+
+.cmpItem{
+  width: 70%;
+  margin: 10px 0px;
+}
+
+.cmpDesc{
+  width: 100%;
+}
+
+.cmpCat{
+  width: 70%;
+}
+
+.cmpValor{
+  width: 20%;
+  margin-left: 10%;
+}
+
+.btsacoes{
+  margin: 20px 0px 50px 0px;
+}
+
+button{
+  margin: 10px;
+  width: 20%;
+}

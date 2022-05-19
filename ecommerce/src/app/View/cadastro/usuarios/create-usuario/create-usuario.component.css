@@ -1,0 +1,35 @@
+.newuser{
+  margin: 30px;
+}
+
+.cmpNome{
+  width: 100%;
+}
+
+.cmpTel{
+  width: 40%;
+  margin-right: 10%;
+}
+
+.cmpEmail{
+  width: 50%;
+}
+
+.cmpCity{
+  width: 50%;
+  margin-right: 20%;
+}
+
+.cmpUf{
+  width: 30%;
+}
+
+.btsacoes{
+  margin: 20px 0px 50px 0px;
+}
+
+button{
+  margin: 10px;
+  width: 20%;
+}
+

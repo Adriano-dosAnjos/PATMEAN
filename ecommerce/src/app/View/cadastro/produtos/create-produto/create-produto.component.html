@@ -1,0 +1,38 @@
+<mat-card class="newproduct mat-elevation-z8">
+  <mat-card-title class="titulo">Novo Produto</mat-card-title>
+
+  <mat-form-field class="cmpItem" appearance="outline">
+    <input type="text" placeholder="novo item" matInput [(ngModel)]="produto.item">
+    <mat-icon matSuffix>fiber_new</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field class="cmpdesc" appearance="outline">
+    <input type="text" placeholder="descrição, sabores..." matInput [(ngModel)]="produto.desc">
+    <mat-icon matSuffix>short_text</mat-icon>
+  </mat-form-field>
+
+  <section>
+    <mat-form-field class="cmpcat" appearance="outline">
+      <input type="text" placeholder="selecione a categoria" matInput [(ngModel)]="produto.categoria">
+      <mat-icon matSuffix>layers</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="cmpvalor" appearance="outline">
+      <input type="text" placeholder="valor" matInput [(ngModel)]="produto.valor">
+      <mat-icon matSuffix>attach_money</mat-icon>
+    </mat-form-field>
+  </section>
+
+  <!--
+  <img src="{{URLProdutoFoto + produto.foto}}">
+  <button mat-raised-button>
+    <input type="file" (change)="selectFoto($event)">
+  </button>
+  -->
+
+  <mat-card-actions class="btsacoes">
+    <button mat-stroked-button (click)="voltar()">Cancelar</button>
+    <button mat-flat-button color="primary" (click)="novoProduto()">Adicionar</button>
+  </mat-card-actions>
+</mat-card>
+

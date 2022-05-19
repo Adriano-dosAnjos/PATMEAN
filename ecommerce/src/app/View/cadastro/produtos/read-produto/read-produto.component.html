@@ -1,0 +1,64 @@
+<app-nav></app-nav>
+
+<section>
+  <button mat-stroked-button [routerLink]="['/cadastro']">
+    <mat-icon matSuffix>arrow_back</mat-icon>
+  </button>
+
+  <button mat-flat-button color="primary" (click)="abrirTelaNovoProduto()">
+    <mat-icon matSuffix>add_circle_outline</mat-icon>
+    Novos Produtos
+  </button>
+  <button mat-flat-button color="warn">
+    <mat-icon matSuffix>delete_forever</mat-icon>
+    Todos Produtos
+  </button>
+</section>
+
+<table mat-table [dataSource]="produto" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> # </th>
+    <td mat-cell *matCellDef="let produto">{{produto.id}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="item">
+    <th mat-header-cell *matHeaderCellDef> Itens </th>
+    <td mat-cell *matCellDef="let produto">{{produto.item}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="valor">
+    <th mat-header-cell *matHeaderCellDef> valores </th>
+    <td mat-cell *matCellDef="let produto">{{produto.valor}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="desc">
+    <th mat-header-cell *matHeaderCellDef> descrição </th>
+    <td mat-cell *matCellDef="let produto">{{produto.desc}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="categoria">
+    <th mat-header-cell *matHeaderCellDef> categoria </th>
+    <td mat-cell *matCellDef="let produto">{{produto.categoria}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="acoes">
+    <th mat-header-cell *matHeaderCellDef> acoes </th>
+    <td mat-cell *matCellDef="let produto">
+      <mat-icon routerLink="/produtos/edit/{{ produto.id }}" color="primary">cached</mat-icon>
+      <mat-icon routerLink="/produtos/delet/{{ produto.id }}" color="warn">delete_outline</mat-icon>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+  <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+
+  <mat-paginator
+  [pageSize]="20"
+  [pageSizeOptions]="[10, 20, 30]"
+  showFirstLastButtons
+  aria-label="Select page of periodic elements">
+  </mat-paginator>
+</table>
+
+<app-footer></app-footer>

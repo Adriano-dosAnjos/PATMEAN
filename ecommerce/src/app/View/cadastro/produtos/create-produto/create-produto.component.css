@@ -1,0 +1,30 @@
+.newproduct{
+  margin: 30px;
+}
+
+.cmpItem{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.cmpdesc{
+  width: 100%;
+}
+
+.cmpcat{
+  width: 70%;
+}
+
+.cmpvalor{
+  width: 20%;
+  margin-left: 10%;
+}
+
+.btsacoes{
+  margin: 20px 0px 50px 0px;
+}
+
+button{
+  margin: 10px;
+  width: 20%;
+}

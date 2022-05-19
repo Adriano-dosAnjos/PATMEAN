@@ -1,0 +1,9 @@
+
+.espaco{
+  flex: 1 1 auto;
+}
+
+.cmpBuscar{
+  width: 30%;
+  font-size: small;
+}

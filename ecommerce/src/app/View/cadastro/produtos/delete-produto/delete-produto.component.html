@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+
+<mat-card class="dltproduct mat-elevation-z8">
+  <mat-card-title class="titulo">Deletar Produto</mat-card-title>
+
+  <section>
+    <mat-form-field class="cmpId" appearance="outline">
+      <input type="number" placeholder="id" matInput [disabled]="true" name="id" [(ngModel)]="produto.id">
+      <mat-icon matSuffix>layers</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="cmpItem" appearance="outline">
+      <input type="text" placeholder="item" matInput [disabled]="true" name="item" [(ngModel)]="produto.item">
+      <mat-icon matSuffix>layers</mat-icon>
+    </mat-form-field>
+  </section>
+
+  <mat-form-field class="cmpDesc" appearance="outline">
+    <input type="text" placeholder="descrição" matInput [disabled]="true" name="desc" [(ngModel)]="produto.desc">
+    <mat-icon matSuffix>short_text</mat-icon>
+  </mat-form-field>
+
+  <section>
+    <mat-form-field class="cmpCat" appearance="outline">
+      <input type="text" placeholder="categoria" matInput [disabled]="true" name="categoria" [(ngModel)]="produto.categoria">
+      <mat-icon matSuffix>layers</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="cmpValor" appearance="outline">
+      <input type="text" placeholder="valor" matInput [disabled]="true" name="valor" [(ngModel)]="produto.valor">
+      <mat-icon matSuffix>attach_money</mat-icon>
+    </mat-form-field>
+  </section>
+
+  <mat-card-actions class="btsacoes">
+    <button mat-stroked-button routerLink="/produtos">Cancelar</button>
+    <button mat-flat-button color="warn" (click)="excluirProduto()">Deletar</button>
+  </mat-card-actions>
+</mat-card>

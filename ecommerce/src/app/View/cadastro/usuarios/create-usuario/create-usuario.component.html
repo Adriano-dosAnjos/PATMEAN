@@ -1,0 +1,38 @@
+<mat-card class="newuser mat-elevation-z8">
+  <mat-card-title class="titulo">Novos Usuarios</mat-card-title>
+
+  <mat-form-field class="cmpNome" appearance="outline">
+    <input type="text" placeholder="nome" matInput [(ngModel)]="usuario.nome">
+    <mat-icon matSuffix>account_circle</mat-icon>
+  </mat-form-field>
+
+  <section>
+    <mat-form-field class="cmpTel" appearance="outline">
+      <input type="tel" placeholder="(XX) XXXXX-XXXX" matInput [(ngModel)]="usuario.tel">
+      <mat-icon matSuffix>call</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="cmpEmail" appearance="outline">
+      <input type="text" placeholder="email" matInput [(ngModel)]="usuario.email">
+      <mat-icon matSuffix>alternate_email</mat-icon>
+    </mat-form-field>
+  </section>
+
+  <section>
+    <mat-form-field class="cmpCity" appearance="outline">
+      <input type="text" placeholder="cidade" matInput [(ngModel)]="usuario.cidade">
+      <mat-icon matSuffix>location_on</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="cmpUf" appearance="outline">
+      <input type="text" placeholder="uf" matInput [(ngModel)]="usuario.uf">
+      <mat-icon matSuffix>map</mat-icon>
+    </mat-form-field>
+  </section>
+
+  <mat-card-actions class="btsacoes">
+    <button mat-stroked-button (click)="voltar()">Cancelar</button>
+    <button mat-flat-button color="primary" (click)="novoUsuario()">Adicionar</button>
+  </mat-card-actions>
+</mat-card>
+

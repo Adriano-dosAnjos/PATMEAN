@@ -1,0 +1,12 @@
+
+[
+    {
+        "id": 1,
+        "item": "Salada",
+        "categoria": "salgado",
+        "valor": "9,80",
+        "desc": "Alface, tomate, Pepino, Ovos",
+        "foto": ""
+    }
+
+]
